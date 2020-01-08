@@ -6,4 +6,4 @@ Project | Description | Technology
 --- | --- | ---
 *Travelblog (link needed)* | *(description needed)* | React
 *Drivecool Homepage (link needed)* | *(description needed)* | React
-[Project Euler](./Project Euler/) | *(description needed)* | C#
+[Project Euler](/Project&#32;Euler) | *(description needed)* | C#
