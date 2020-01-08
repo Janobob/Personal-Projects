@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap');
+
+* {
+    font-family: "Raleway", sans-serif;
+}
+
+.ui.header,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+}
+
+.presenter {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background-image 1.5s;
+    overflow: hidden;
+
+    .scroll-container {
+        transition: margin-top 1.5s;
+    }
+
+    .country-container {
+        height: 42vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:first-child {
+            margin-top: 30vh;
+        }
+
+        &.active {
+            .country-spacer {
+                .ui.huge.header.country-name {
+                    transition: 1.5s;
+                    font-size: 8em;
+                }
+
+                .country-info-container {
+                    position: relative;
+
+                    .country-relative-info {
+                        position: absolute;
+    
+                        .country-description {
+                            position: relative;
+                            transition: 1.5s;
+                            font-size: 1.4em;
+                            opacity: 1;
+                        }
+    
+                        .country-button {
+                            position: relative;
+                            transition: 1.5s;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+
+        .country-spacer {
+            width: 100%;
+
+            .ui.huge.header.country-name {
+                transition: 1.5s;
+                font-size: 1.5em;
+                color: white;
+
+                &::first-letter{
+                    font-size: 1.3em;
+                }
+            }
+
+            .country-info-container {
+                position: relative;
+
+                .country-relative-info {
+                    position: absolute;
+
+                    .country-description {
+                        transition: 1.5s;
+                        font-size: 1.4em;
+                        opacity: 0;
+                    }
+
+                    .country-button {
+                        transition: 1.5s;
+                        opacity: 0;
+                    }
+                }
+            }
+        }        
+    }
+}
+
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+
+.white {
+    color: #FFFFFF !important;
+}
+
+.ui.basic.white.button, .ui.white.orange.buttons .button {
+    box-shadow: 0 0 0 1px #FFFFFF inset!important;
+    color: #FFFFFF!important;
+}
+
+.ui.basic.white.button:hover, .ui.basic.white.buttons .button:hover {
+    background: 0 0!important;
+    box-shadow: 0 0 0 1px #FFFFFF inset!important;
+    color: #FFFFFF!important;
+}
+
+.ui.basic.white.button:focus, .ui.basic.white.buttons .button:focus {
+    background: 0 0!important;
+    box-shadow: 0 0 0 1px #FFFFFF inset!important;
+    color: #FFFFFF!important;
+}

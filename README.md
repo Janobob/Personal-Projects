@@ -4,6 +4,6 @@ Personal repo to try out new tech, testing some ideas and to delevop my coding s
 
 Project | Description | Technology
 --- | --- | ---
-*Travelblog (link needed)* | *(description needed)* | React
-*Drivecool Homepage (link needed)* | *(description needed)* | React
-[Project Euler](/Project&#32;Euler) | *(description needed)* | C#
+[Project Euler](/Project-Euler) | *(description needed)* | React
+[Drivecool Homepage](/Drivecool-Homepage) | *(description needed)* | React
+[Travelblog](/Travelblog) | *(description needed)* | C#

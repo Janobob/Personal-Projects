@@ -1,0 +1,98 @@
+@import "bootstrap/bootstrap.scss";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap");
+
+.upper-menu {
+  background-color: $white;
+  height: 130px;
+
+  .upper-menu-item {
+    &:not(:first-child) {
+      margin-right: 20px;
+    }
+    .upper-menu-link {
+      font-weight: bold;
+      .upper-menu-link-icon {
+        border-radius: 50%;
+        border: 2px solid $secondary;
+        padding: 8px;
+      }
+    }
+  }
+}
+
+.nav-link {
+  transition: background-color 0.5s;
+}
+
+.nav-item .active {
+  background-color: $primary;
+}
+
+.banner {
+  background-image: url("./../images/Banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  width: 100vw;
+}
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: $black;
+
+  &:hover {
+    color: $black;
+    text-decoration: underline;
+  }
+}
+
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+}
+ul.timeline:before {
+  content: " ";
+  background: $gray-400;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 400;
+}
+ul.timeline > li {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+ul.timeline > li:before {
+  content: " ";
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid $secondary;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 400;
+}
+
+.main {
+  min-height: calc(100vh - 80px);
+}
+
+.footer {
+  height: 80px;
+  text-align: center;
+}
